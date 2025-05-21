@@ -197,7 +197,7 @@ average_uph = uph_tracker_df["UPH"].astype(float).mean()
 avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
 # ---------------- Display Dashboard ----------------
 st.image("destro_logo.jpg", width=400)
-st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
+st.metric(label="Time", value=f"{10} : {42} : {12}")
 total_time=dhrs+dmins/60
 st.metric(label="Total Cases Picked", value=8276)
 st.metric(label="UPH", value=f"{int(avg_uph)}")
