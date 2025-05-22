@@ -197,7 +197,7 @@ dhrs, rem =divmod(dashboard_time.total_seconds(),3600)
 dmins,dsec =divmod(rem,60)
 average_uph = uph_tracker_df["UPH"].astype(float).mean()
 
-avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
+avg_uph = sum(int(v) for v in uph_tracker.values()) / 10
 # ---------------- Display Dashboard ----------------
 st.image("destro_logo.jpg", width=400)
 st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
