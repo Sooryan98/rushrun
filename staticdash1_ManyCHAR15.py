@@ -203,7 +203,7 @@ st.image("destro_logo.jpg", width=400)
 st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
 total_time=dhrs+dmins/60
 st.metric(label="Total Cases Picked", value=log_data['total_cases'])
-st.metric(label="UPH", value=f"{int(avg_uph)}")
+st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
 # chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Case Num:Q'
