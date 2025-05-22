@@ -10,8 +10,8 @@ from datetime import datetime
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DESTRO_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "yusen_2025-04-10.log")
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
-DESTRO_PATH = "/home/soorya/rushrundestro/rushrun/log_bank/1_Many/yusen_2025-05-22.log"
-FMS_PATH = "/home/soorya/rushrundestro/rushrun/log_bank/1_Many/FMS_2025-05-22.log"
+DESTRO_PATH = "log_bank/1_Many/yusen_2025-05-22.log"
+FMS_PATH = "log_bank/1_Many/FMS_2025-05-22.log"
 # FMS_PATH = "log_bank/21utow.log"
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -188,7 +188,7 @@ robot_uph_df = robot_uph_df.sort_values(by="Robot_Num")
 # 2025-05-22 09:50:31,073
 # 2025-05-22 01:43:50
 end_time='2025-05-22 09:50:31,000000'
-start_time='2025-05-22 01:43:50,000000'
+# start_time='2025-05-22 01:43:50,000000'
 fmt = "%Y-%m-%d %H:%M:%S,%f"
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
